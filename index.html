@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Registration | Task UI</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container d-flex justify-content-end">
+      <button class="btn btn-outline-light" id="themeToggle" title="Toggle theme">
+        <i class="bi bi-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="main-container d-flex justify-content-center align-items-center">
+    <div class="form-box p-4 shadow-lg rounded-4 animate__animated animate__fadeInDown">
+      <h2 class="text-center mb-4 fw-bold" id="formTitle">Login</h2>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="animate__animated animate__fadeIn">
+        <div class="mb-3 position-relative">
+          <label>Email</label>
+          <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+          <span class="emoji-feedback" id="loginEmailEmoji">🙂</span>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+          <i class="bi bi-eye-slash togglePassword" id="toggleLoginPass"></i>
+          <span class="emoji-feedback" id="loginPassEmoji">🙂</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
+      </form>
+
+      <!-- Registration Form -->
+      <form id="registerForm" class="d-none animate__animated animate__fadeIn">
+        <div class="mb-3 position-relative">
+          <label>Username</label>
+          <input type="text" class="form-control" id="regUsername" placeholder="Enter your username" required>
+          <span class="emoji-feedback" id="regUserEmoji">🙂</span>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Email</label>
+          <input type="email" class="form-control" id="regEmail" placeholder="Enter your email" required>
+          <span class="emoji-feedback" id="regEmailEmoji">🙂</span>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Password</label>
+          <input type="password" class="form-control" id="regPassword" placeholder="Enter password" required>
+          <i class="bi bi-eye-slash togglePassword" id="toggleRegPass"></i>
+          <span class="emoji-feedback" id="regPassEmoji">🙂</span>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+          <span class="emoji-feedback" id="confirmPassEmoji">🙂</span>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 mt-3">Register</button>
+      </form>
+
+      <p class="text-center mt-3 fadeIn">
+        <span id="toggleText">Don’t have an account?</span>
+        <a href="#" id="toggleLink" class="fw-semibold text-decoration-none">Register</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 bg-light">
+    <p class="mb-0">© 2025 Designed by Paritosh</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
